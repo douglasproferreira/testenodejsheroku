@@ -2,7 +2,7 @@
   "name": "testenodejsheroku",
   "version": "1.0.0",
   "description": "Teste de Inserção de Aplicação Node no Heroku",
-  "main": "index.js",
+  "main": "nodemon server.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
