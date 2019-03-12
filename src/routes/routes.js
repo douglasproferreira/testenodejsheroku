@@ -1,7 +1,7 @@
 const express = require('express');
 const routes = express.Router();
 
-const PublishFoundController = require('../controllers/PublishController.js');
+const PublishController = require('../controllers/PublishController.js');
 
 routes.get('/publish', PublishController.index);
 routes.get('/publish/:status', PublishController.show);
