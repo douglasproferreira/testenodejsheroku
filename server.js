@@ -20,6 +20,8 @@ mongoose
 requireDir('./src/models');
 
 // Rotas
-app.use('/', require('./src/routes/routes'));
+app.get('*', function(req, res){
+  res.sendfile('./views/index.html');
+});
 
 var porta = process.env.PORT || 8080;
