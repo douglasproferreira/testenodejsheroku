@@ -14,14 +14,15 @@ mongoose
     {
       useNewUrlParser: true
     })
-  .then(() => console.log('MongoDB Connected - Server On In Port 3000'))
+  .then(() => console.log('MongoDB Connected - Server On In Port 8080'))
   .catch(err => console.log(err));
 
 requireDir('./src/models');
 
 // Rotas
 app.get('/', function(req, res){
-  res.sendfile('./views/index.html');
+  res.sendfile('./src/view/index.html');
 });
 
 var porta = process.env.PORT || 8080;
+app.listen(porta);

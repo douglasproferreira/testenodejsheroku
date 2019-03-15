@@ -28,7 +28,7 @@ module.exports = {
     return res.json(publish);
   },
 
-  mostra(req, res){
-    return res.sendfile('./views/index.html');
+  async mostra (req, res){
+    return await res.sendfile('../view/index.html');
   }
 };
