@@ -20,7 +20,7 @@ mongoose
 requireDir('./src/models');
 
 // Rotas
-app.get('*', function(req, res){
+app.get('/', function(req, res){
   res.sendfile('./views/index.html');
 });
 
