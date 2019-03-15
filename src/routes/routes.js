@@ -3,6 +3,7 @@ const routes = express.Router();
 
 const PublishController = require('../controllers/PublishController.js');
 
+route.get('/',PublishController.mostra);
 routes.get('/publish', PublishController.index);
 routes.get('/publish/:status', PublishController.show);
 routes.post('/publish', PublishController.store)

@@ -23,4 +23,3 @@ requireDir('./src/models');
 app.use('/api', require('./src/routes/routes'));
 
 var porta = process.env.PORT || 8080;
-app.listen(porta);

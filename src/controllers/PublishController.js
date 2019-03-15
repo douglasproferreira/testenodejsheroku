@@ -26,5 +26,9 @@ module.exports = {
     const publish = await Publish.findByIdAndUpdate(req.params.id, req.body, { new: true });
 
     return res.json(publish);
+  },
+
+  mostra(req, res){
+    return res.sendfile('./views/index.html');
   }
 };
